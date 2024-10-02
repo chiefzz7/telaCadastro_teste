@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="cad">
+        <div class="card-1">
+            <h1>Cadastrar Usuário</h1>
+        </div>
+
+        <div class="card-2">
+            <form action="assets/php/envia.php" method="POST">
+                <h1 class="card2-text">Criar Conta</h1>
+
+                <div class="form-grupo">
+                    <input placeholder="Nome" type="text" id="nome" name="nome" maxlength="100" required>
+                </div>
+
+                <div class="form-grupo">
+                    <input placeholder="Idade" type="number" id="idade" name="idade" required>
+                </div>
+
+                <div class="form-grupo">
+                    <input placeholder="CPF" type="text" id="cpf" name="cpf" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required title="Digite o CPF no formato 123.456.789-10">
+                </div>
+
+                <button type="submit">CRIAR CONTA</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
